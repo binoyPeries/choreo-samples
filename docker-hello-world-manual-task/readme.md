@@ -12,4 +12,3 @@ This is a simple program that prints "Hello, World" to the console. It is used t
 
 - Execute the component using Choreo console.
 - Observe the execution logs in Choreo to see the "Hello, World" message.
-M

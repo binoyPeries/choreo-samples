@@ -6,7 +6,7 @@ type Greeting record {
     string message;
 };
 
-service / on new http:Listener(8092) {
+service /hello on new http:Listener(8099) {
     resource function get .(string name) returns Greeting {
         Greeting greetingMessage = {"from": "Choreo v1.2", "to": name, "message": "Welcome to Choreo!"};
         return greetingMessage;

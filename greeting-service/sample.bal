@@ -8,14 +8,14 @@ type Greeting record {
 
 service /hello on new http:Listener(8099) {
     resource function get .(string name) returns Greeting {
-        Greeting greetingMessage = {"from": "Choreo v1.5 with hello", "to": name, "message": "Welcome to Choreo!"};
+        Greeting greetingMessage = {"from": "Choreo v1.11 with hello", "to": name, "message": "Welcome to Choreo!"};
         return greetingMessage;
     }
 }
 
-service /health on new http:Listener(8088) {
-    resource function get .() returns string {
-        return "health 1.11";
-    }
+// service /health on new http:Listener(8088) {
+//     resource function get .() returns string {
+//         return "health 1.11";
+//     }
 
-}
+// }

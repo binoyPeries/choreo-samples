@@ -13,9 +13,9 @@ service /hello on new http:Listener(8099) {
     }
 }
 
-// service /health on new http:Listener(8088) {
-//     resource function get .() returns string {
-//         return "health 1.11";
-//     }
+service /health on new http:Listener(8088) {
+    resource function get .() returns string {
+        return "health 1.11";
+    }
 
-// }
+}

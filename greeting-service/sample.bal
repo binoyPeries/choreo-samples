@@ -12,3 +12,10 @@ service /hello on new http:Listener(8099) {
         return greetingMessage;
     }
 }
+
+service /health on new http:Listener(9099) {
+    resource function get .() returns string {
+        return "heatlh v1.2";
+    }
+
+}

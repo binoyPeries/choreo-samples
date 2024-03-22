@@ -6,16 +6,9 @@ type Greeting record {
     string message;
 };
 
-service / on new http:Listener(8090) {
-    resource function get .(string name) returns Greeting {
-        Greeting greetingMessage = {"from": "Choreo", "to": name, "message": "Welcome to Choreo!"};
-        return greetingMessage;
-    }
-}
-
-service /hz on new http:Listener(8091) {
-    resource function get .(string name) returns Greeting {
-        Greeting greetingMessage = {"from": "health", "to": name, "message": "Welcome to Choreo!"};
+service /health on new http:Listener(8090) {
+    resource function get .(string name, int age) returns Greeting {
+        Greeting greetingMessage = {"from": "Choreo", "to": name, "message": age.toBalString()};
         return greetingMessage;
     }
 }

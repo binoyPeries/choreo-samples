@@ -46,3 +46,7 @@ dist
 
 # maven
 target/
+
+#.Net
+[Oo]bj/
+[Bb]in/

@@ -65,7 +65,7 @@ func main() {
 func greet(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get("name")
 	if name == "" {
-		name = "Stranger 9098"
+		name = "Stranger 9098 v1.3"
 	}
 	fmt.Fprintf(w, "Hello, %s!\n", name)
 }

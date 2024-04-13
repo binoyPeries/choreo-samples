@@ -1,7 +1,7 @@
 import ballerina/http;
 
-service /hello on new http:Listener(809) {
+service /hello2 on new http:Listener(8080) {
     resource function get greeting() returns string {
-        return "Hello, World!"
+        return "Hello, World!";
     }
 }

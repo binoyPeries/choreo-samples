@@ -21,7 +21,7 @@ func startServer1() {
 	port1 := 9088
 	mux1 := http.NewServeMux()
 	mux1.HandleFunc("/hz", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Welcome to the health service, %d", port1)
+		fmt.Fprintf(w, "Welcome to the health service chan, %d", port1)
 	})
 
 	fmt.Printf("Listening on port: %v\n", port1)

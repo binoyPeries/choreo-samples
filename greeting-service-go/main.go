@@ -59,7 +59,7 @@ func main() {
 	if err := server.Shutdown(shutdownCtx); err != nil {
 		log.Fatalf("HTTP shutdown error: %v", err)
 	}
-	log.Println("Shutdown completed.")
+	log.Println("Shutdown completed. check")
 }
 
 func greet(w http.ResponseWriter, r *http.Request) {

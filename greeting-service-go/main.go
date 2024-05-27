@@ -34,7 +34,7 @@ func startServer2() {
 	port2 := 9093
 	mux2 := http.NewServeMux()
 	mux2.HandleFunc("/greeter/greet", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Welcome to the greeting service hellow, %d", port2)
+		fmt.Fprintf(w, "Welcome to the greeting service hello, %d", port2)
 	})
 
 	fmt.Printf("Listening on ports: %v\n", port2)

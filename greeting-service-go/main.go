@@ -37,7 +37,7 @@ func startServer2() {
 		fmt.Fprintf(w, "Welcome to the greeting service hellow, %d", port2)
 	})
 
-	fmt.Printf("Listening on port: %v\n", port2)
+	fmt.Printf("Listening on ports: %v\n", port2)
 	if err := http.ListenAndServe(fmt.Sprintf(":%v", port2), mux2); err != nil {
 		log.Fatalf("Failed to start server on port %v: %v", port2, err)
 	}

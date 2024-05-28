@@ -39,6 +39,6 @@ func startServer2() {
 
 	fmt.Printf("Listening on ports: %v\n", port2)
 	if err := http.ListenAndServe(fmt.Sprintf(":%v", port2), mux2); err != nil {
-		log.Fatalf("Failed to start server on port  %v: %v", port2, err)
+		log.Fatalf("Failed to start server on port %v: %v", port2, err)
 	}
 }

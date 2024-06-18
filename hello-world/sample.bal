@@ -5,3 +5,10 @@ service / on new http:Listener(8999) {
         return "Hello, World!";
     }
 }
+
+service /hz on new http:Listener(8999) {
+    resource function get check() returns string {
+        return "Health check!";
+    }
+}
+

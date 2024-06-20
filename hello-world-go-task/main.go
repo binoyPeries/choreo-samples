@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, World new!")
+	fmt.Println("Hello, World new!!")
 	for i, arg := range os.Args[1:] {
 		fmt.Println("Arg", i, ": ", arg)
 	}

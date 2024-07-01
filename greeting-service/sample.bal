@@ -13,7 +13,7 @@ service /greeter on new http:Listener(8092) {
     }
 }
 
-service /hz on new http:Listener(8091) {
+service /hz on new http:Listener(8096) {
     resource function get .(string name) returns Greeting {
         Greeting greetingMessage = {"from" : "Choreo", "to" : name, "message" : "Welcome to health v2!"};
         return greetingMessage;

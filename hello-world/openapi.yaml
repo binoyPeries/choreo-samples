@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: Hello Service
+  version: 1.0.0
+servers:
+  - url: /hello
+paths:
+  /greeting:
+    get:
+      summary: Retrieve greeting
+      operationId: greetingGet
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string

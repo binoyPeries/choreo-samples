@@ -1,0 +1,22 @@
+schemaVersion: "1.1"
+endpoints:
+    - name: go-greeter-803
+      displayName: Go Greeter
+      service:
+        basePath: /
+        port: 9090
+      type: REST
+      networkVisibilities:
+        - Project
+        - Organization
+      schemaFilePath: openapi.yaml
+    - name: health-two-4fd
+      displayName: health two
+      service:
+        basePath: /
+        port: 9080
+      type: REST
+      networkVisibilities:
+        - Project
+        - Organization
+      schemaFilePath: hz.yaml

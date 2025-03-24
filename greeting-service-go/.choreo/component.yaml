@@ -1,4 +1,4 @@
-schemaVersion: "1.1"
+schemaVersion: 1.1
 endpoints:
     - name: go-greeter-v3-20c
       displayName: Go Greeter v3

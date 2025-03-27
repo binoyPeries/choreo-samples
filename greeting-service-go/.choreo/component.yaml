@@ -42,7 +42,7 @@ endpoints:
     # Defaults to wildcard route if not specified.
     # This is only applicable to REST endpoint types.
     # The path should be relative to the docker context.
-    schemaFilePath: openapi.yaml
+    schemaFilePath: openapiv2.yaml
 configuration:
     # +optional List of environment variables to be injected into the component.
     env:

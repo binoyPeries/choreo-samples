@@ -1,6 +1,6 @@
 # React Single Page Application
 
-This is a sample React application that can be used to demonstrate WebApp deployments of Choreo. skabkjd
+This is a sample React application that can be used to demonstrate WebApp deployments of Choreo.
 
 ## Deploy In Choreo
 

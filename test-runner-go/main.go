@@ -80,7 +80,7 @@ import (
  }
  
  func TestMyFunction(t *testing.T) {
-	 performAPICallAndAssert(t, 1)
+	 performAPICallAndAssert(t, 3)
 	 performAPICallAndAssert(t, 2)
  }
  
